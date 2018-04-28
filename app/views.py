@@ -73,6 +73,7 @@ def cadastro_vestibulares(request):
             'vestibulares': Vestibular.objects.all(),
             'year':datetime.now().year,
         })
+    )
 def cadastro_candidatos(request):
     assert isinstance(request, HttpRequest)
     return render(
